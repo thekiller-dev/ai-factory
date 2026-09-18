@@ -7,3 +7,6 @@ build/
 .DS_Store
 coverage/
 .turbo/
+# vendor externes : lourds (3,9G), gardés localement, non versionnés
+# seul vendor/README.md + vendor/EXTERNAL_SKILLS_INDEX.md sont commités
+vendor/external/*

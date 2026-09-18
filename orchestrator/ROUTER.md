@@ -24,3 +24,17 @@
 - UI vs API contract → source de vérité : `packages/shared` (Zod schemas). Voir backend-node §4 + frontend-react §4.
 - Design vs accessibilité → accessibilité gagne (design-system §5).
 - Rapidité vs sécurité → sécurité gagne (AGENTS.md §1).
+
+## Références externes (vendor/ — complément, jamais remplacement)
+
+> Lire d'abord le skill interne, puis l'externe si besoin de profondeur. Détail : `vendor/EXTERNAL_SKILLS_INDEX.md`.
+
+| Besoin | Interne d'abord | Complément externe |
+|---|---|---|
+| Trouver un skill manquant | `skills/orchestrator` | `vendor/external/vercel-labs-skills/skills/find-skills` (`npx skills find`) |
+| Plan, brainstorm, subagents, TDD, debug, review | `skills/orchestrator` + `skills/qa-devops` | `vendor/external/obra-superpowers/skills/` (`brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `systematic-debugging`, `test-driven-development`) + `vendor/external/mattpocock-skills/skills/engineering/` (`to-spec`, `diagnosing-bugs`, `code-review`, `prototype`) |
+| Belle UI / landing / image→code | `skills/design-system` + `skills/frontend-react` | `vendor/external/anthropics-skills/skills/frontend-design` + `vendor/external/taste-skill/skills/` + `vendor/external/refactoring-ui-plugin/skills/` + `vendor/external/diagram-design/skills/diagram-design` |
+| PDF/Word/Excel/PPT | `skills/backend-node` | `vendor/external/anthropics-skills/skills/{pdf,docx,xlsx,pptx}` |
+| Chatbot/RAG/MCP/prompts/evals | `skills/agents-ai` | `vendor/external/anthropics-skills/skills/{mcp-builder,skill-creator,claude-api}` + `vendor/external/anthropics-courses` + `vendor/external/anthropic-cookbook` + `vendor/external/openai-cookbook` + `vendor/external/gemini-cookbook` (+ `vendor/external/OmniRoute/skills/` si routage multi-modèles) |
+| Browser automation / test visuel | `skills/qa-devops` | `vendor/external/vercel-agent-browser/skills/agent-browser` |
+| Choix modèle local vs cloud | `skills/agents-ai` | `vendor/external/llmfit/skills/llmfit-advisor` |
