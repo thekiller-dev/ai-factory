@@ -25,16 +25,17 @@
 - Design vs accessibilité → accessibilité gagne (design-system §5).
 - Rapidité vs sécurité → sécurité gagne (AGENTS.md §1).
 
-## Références externes (vendor/ — complément, jamais remplacement)
+## Librairie curée (library/ — complément, jamais remplacement)
 
-> Lire d'abord le skill interne, puis l'externe si besoin de profondeur. Détail : `vendor/EXTERNAL_SKILLS_INDEX.md`.
+> Lire d'abord le skill interne, puis la librairie si besoin de profondeur. Index : `library/README.md`.
 
-| Besoin | Interne d'abord | Complément externe |
+| Besoin | Interne d'abord | Complément library/ |
 |---|---|---|
-| Trouver un skill manquant | `skills/orchestrator` | `vendor/external/vercel-labs-skills/skills/find-skills` (`npx skills find`) |
-| Plan, brainstorm, subagents, TDD, debug, review | `skills/orchestrator` + `skills/qa-devops` | `vendor/external/obra-superpowers/skills/` (`brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `systematic-debugging`, `test-driven-development`) + `vendor/external/mattpocock-skills/skills/engineering/` (`to-spec`, `diagnosing-bugs`, `code-review`, `prototype`) |
-| Belle UI / landing / image→code | `skills/design-system` + `skills/frontend-react` | `vendor/external/anthropics-skills/skills/frontend-design` + `vendor/external/taste-skill/skills/` + `vendor/external/refactoring-ui-plugin/skills/` + `vendor/external/diagram-design/skills/diagram-design` |
-| PDF/Word/Excel/PPT | `skills/backend-node` | `vendor/external/anthropics-skills/skills/{pdf,docx,xlsx,pptx}` |
-| Chatbot/RAG/MCP/prompts/evals | `skills/agents-ai` | `vendor/external/anthropics-skills/skills/{mcp-builder,skill-creator,claude-api}` + `vendor/external/anthropics-courses` + `vendor/external/anthropic-cookbook` + `vendor/external/openai-cookbook` + `vendor/external/gemini-cookbook` (+ `vendor/external/OmniRoute/skills/` si routage multi-modèles) |
-| Browser automation / test visuel | `skills/qa-devops` | `vendor/external/vercel-agent-browser/skills/agent-browser` |
-| Choix modèle local vs cloud | `skills/agents-ai` | `vendor/external/llmfit/skills/llmfit-advisor` |
+| Trouver un skill manquant | `skills/orchestrator` | `library/00-orchestration/find-skills` (`npx skills find`) |
+| Plan, brainstorm, subagents, TDD, debug, review | `skills/orchestrator` + `skills/qa-devops` | `library/00-orchestration/obra-superpowers/` (`brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `systematic-debugging`, `test-driven-development`, `verification-before-completion`) + `library/00-orchestration/mattpocock-engineering/` (`to-spec`, `to-tickets`, `diagnosing-bugs`, `code-review`, `prototype`, `implement`) + `library/00-orchestration/i-have-adhd` |
+| Belle UI / landing / image→code | `skills/design-system` + `skills/frontend-react` | `library/01-frontend-design/anthropics/frontend-design` + `library/01-frontend-design/taste/` (13 styles + image-to-code) + `library/01-frontend-design/refactoring-ui/` (10 atomiques + skills.json) + `library/01-frontend-design/diagram-design` |
+| PDF/Word/Excel/PPT | `skills/backend-node` | `library/02-backend-docs/anthropics/{pdf,docx,xlsx,pptx,doc-coauthoring}` + `library/02-backend-docs/docs-editor` + `library/02-backend-docs/anthropic-custom/` |
+| Chatbot/RAG/MCP/prompts/evals | `skills/agents-ai` | `library/03-agents-ai/anthropics/{mcp-builder,skill-creator,claude-api,web-artifacts-builder}` + `library/03-agents-ai/openmaic` + `library/03-agents-ai/omniroute-skills/` (routage multi-modèles, coûts, cache) + `library/03-agents-ai/llmfit-advisor` |
+| Browser automation / test visuel | `skills/qa-devops` | `library/03-agents-ai/agent-browser` (+ schema) + `library/04-qa-debug/webapp-testing` |
+| Choix modèle local vs cloud | `skills/agents-ai` | `library/03-agents-ai/llmfit-advisor` |
+| Exemples d'archi multi-agents | `skills/orchestrator` | `library/05-architecture/` (AGENTS.md i-have-adhd + vercel-agent-browser, PLATFORM_GUIDE refactoring-ui) |

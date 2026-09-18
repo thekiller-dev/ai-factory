@@ -1,20 +1,14 @@
-# vendor/ — Références externes (ne pas modifier, ne pas coder dedans)
+# vendor/ — Provenance (les clones ont été supprimés après extraction)
 
-> FR: Clones en lecture seule pour enrichir la factory. La source de vérité reste `skills/`.
-> EN: Read-only clones to enrich the factory. Source of truth stays in `skills/`.
+> Les 20 repos (3,9G) ont été clonés, inventoriés, puis **supprimés**. Seul l'utile vit dans `library/` (18M, 127 SKILL.md).
+> La source de vérité reste `skills/`.
 
 ## Contenu
-- `external/` : 20 repos clonés `--depth 1` (3,9G sur disque, **exclus de git** via .gitignore).
-- `EXTERNAL_SKILLS_INDEX.md` : inventaire + mapping vers `skills/` internes (versionné).
+- `EXTERNAL_SKILLS_INDEX.md` : inventaire d'origine + mapping (archive, provenance des extractions).
 - Ce README : versionné.
+- Extraction curée : `library/README.md`.
 
 ## Règle agent (obligatoire)
 1. Toujours lire d'abord `skills/<domaine>/SKILL.md` interne.
-2. Puis, si besoin de profondeur, lire la référence externe listée dans `EXTERNAL_SKILLS_INDEX.md` comme **complément**, jamais comme remplacement.
-3. Citer les deux : `[SKILL USED] skills/frontend-react + vendor/external/anthropics-skills/skills/frontend-design`.
-
-## Régénérer
-```bash
-# re-clone léger (liste dans EXTERNAL_SKILLS_INDEX.md § Sources)
-cat vendor/EXTERNAL_SKILLS_INDEX.md | grep 'https://github.com'
-```
+2. Puis, si besoin de profondeur, lire `library/<domaine>/.../SKILL.md` comme **complément**, jamais comme remplacement.
+3. Citer les deux : `[SKILL USED] skills/frontend-react + library/01-frontend-design/anthropics/frontend-design`.
