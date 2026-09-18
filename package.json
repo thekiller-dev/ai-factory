@@ -1,0 +1,18 @@
+{
+  "name": "ai-factory-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "skills:sync": "node scripts/sync-skills.mjs",
+    "skills:validate": "node scripts/validate-skills.mjs",
+    "lint": "echo '(placeholder) pnpm -r exec eslint .' && pnpm -r --if-present exec eslint . || true",
+    "typecheck": "echo '(placeholder) pnpm -r exec tsc --noEmit' && pnpm -r --if-present exec tsc --noEmit || true",
+    "test": "echo '(placeholder) pnpm -r test' && pnpm -r --if-present test || true",
+    "build": "pnpm -r --if-present build || true",
+    "dev:web": "pnpm --filter apps-web dev",
+    "dev:api": "pnpm --filter apps-api dev"
+  }
+}

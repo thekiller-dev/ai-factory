@@ -1,0 +1,19 @@
+---
+description: AI Factory skills router (auto-generated, do not edit)
+alwaysApply: true
+---
+
+# Skills router (source: skills/)
+
+Lire AGENTS.md, orchestrator/BOOTSTRAP.md, orchestrator/ROUTER.md.
+
+Skills disponibles (lire le SKILL.md avant toute tâche du domaine) :
+- skills/agents-ai/SKILL.md
+- skills/backend-node/SKILL.md
+- skills/design-system/SKILL.md
+- skills/frontend-react/SKILL.md
+- skills/orchestrator/SKILL.md
+- skills/qa-devops/SKILL.md
+- skills/security/SKILL.md
+
+Règle: annoncer [SKILL USED] avant chaque tâche. Boucle PLAN→BUILD→REVIEW→FIX→SECURITY→QA→DELIVER. Definition of Done: AGENTS.md §6.

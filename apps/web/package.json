@@ -1,0 +1,27 @@
+{
+  "name": "apps-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.0",
+    "@tanstack/react-query": "^5.40.0",
+    "react-hook-form": "^7.52.0",
+    "@hookform/resolvers": "^3.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@repo/shared": "workspace:*",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
+  }
+}
