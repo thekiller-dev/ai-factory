@@ -1,20 +1,27 @@
-# library/ — Skills curés (extraits, versionnés, 18M, 127 SKILL.md)
+# library/ — Skills curés (extraits, versionnés, 24M, 212 SKILL.md)
 
 > Source : 20 repos clonés puis supprimés (3,9G). Seul l'utile est ici, rangé par domaine factory.
 > Règle : `skills/` internes d'abord (loi), `library/` ensuite (profondeur). Citer les deux : `[SKILL USED] skills/frontend-react + library/01-frontend-design/anthropics/frontend-design`.
 
 ## Structure
-- `00-orchestration/` : obra-superpowers (14) + mattpocock-engineering (17) + find-skills + i-have-adhd — process, plans, subagents, debug, TDD, review
-- `01-frontend-design/` : anthropics (5) + taste (13) + taste-research + refactoring-ui (11 + skills.json) + diagram-design — UI premium, image→code, checklist visuelle
-- `02-backend-docs/` : anthropics pdf/docx/xlsx/pptx/doc-coauthoring + docs-editor + anthropic-custom (3) — documents & édition
-- `03-agents-ai/` : anthropics mcp-builder/skill-creator/claude-api/web-artifacts-builder + openmaic + omniroute-skills (47) + llmfit-advisor + agent-browser (+ schema)
-- `04-qa-debug/` : webapp-testing
-- `05-architecture/` : AGENTS.md exemples (i-have-adhd multi-runtime, vercel-agent-browser), PLATFORM_GUIDE + README refactoring-ui, README anthropics-skills, internal-comms
+- `00-orchestration/` : obra-superpowers (14) + mattpocock-engineering (17) + find-skills + i-have-adhd + ai-factory-skills (11 : planning-*, spec-driven, incremental, constraint-driven, doubt-driven, idea-refine, interview-me, context-engineering, using-agent-skills, source-driven + discernment-nudge) — process, plans, subagents, debug, TDD, review
+- `01-frontend-design/` : anthropics (5) + taste (13) + taste-research + refactoring-ui (11 + skills.json) + diagram-design + ai-factory-skills (8 : composition-patterns, react-*, web-design-guidelines, frontend-ui-engineering, slack-gif-creator, landing-prompt-playbook) + threejs-3d-arsenal (45 : arsenal-index + 43 effets Community + 3d-paper Pro) — UI premium, image→code, checklist visuelle, 3D
+- `02-backend-docs/` : anthropics pdf/docx/xlsx/pptx/doc-coauthoring + docs-editor + anthropic-custom (3) + ai-factory-skills (3 : api-and-interface-design, data-designer, app-auth) — documents & édition
+- `03-agents-ai/` : anthropics mcp-builder/skill-creator/claude-api/web-artifacts-builder + openmaic + omniroute-skills (47) + llmfit-advisor + agent-browser (+ schema) + ai-factory-skills (1 : academy-guide)
+- `04-qa-debug/` : webapp-testing + ai-factory-skills (15 : app-deploy, cli-deploy-auth, deploy-optimize, test-driven-development, debugging-and-error-recovery, code-review-and-quality, code-simplification, ci-cd-and-automation, shipping-and-launch, browser-testing-with-devtools, performance-optimization, observability-and-instrumentation, deprecation-and-migration, git-workflow-and-versioning, security-and-hardening)
+- `05-architecture/` : AGENTS.md exemples (i-have-adhd multi-runtime, vercel-agent-browser), PLATFORM_GUIDE + README refactoring-ui, README anthropics-skills, internal-comms + ai-factory-skills (2 : writing-guidelines, documentation-and-adrs)
 
 ## Provenance (repos d'origine, re-clonables)
 - https://github.com/obra/superpowers
 - https://github.com/mattpocock/skills
 - https://github.com/vercel-labs/skills
+- https://github.com/vercel-labs/agent-skills
+- https://github.com/addyosmani/agent-skills
+- https://github.com/auth0/agent-skills
+- https://github.com/NVIDIA/skills
+- https://github.com/MengTo/ThreeUI
+- https://github.com/agentskills/agentskills (spec, pas de skills à extraire)
+- https://github.com/VoltAgent/awesome-agent-skills (index 1497+, pas d'extraction en bloc)
 - https://github.com/anthropics/skills
 - https://github.com/Leonxlnx/taste-skill
 - https://github.com/gnurio/refactoring-ui-plugin

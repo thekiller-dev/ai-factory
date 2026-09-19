@@ -7,6 +7,13 @@
 
 ```
 https://github.com/vercel-labs/skills → vendor/external/vercel-labs-skills
+https://github.com/vercel-labs/agent-skills → extraction 2026-09-18 : 9 skills → library/ (voir DECISIONS.md)
+https://github.com/addyosmani/agent-skills → extraction 2026-09-18 : 25 skills → library/ai-factory-skills/ (voir DECISIONS.md)
+https://github.com/anthropics/skills → re-clone 2026-09-18 : 3 nouveaux + frontend-design MAJ (voir DECISIONS.md)
+https://github.com/auth0/agent-skills → extraction 2026-09-18 : méta-skill → library/02-backend-docs/ai-factory-skills/app-auth/
+https://github.com/NVIDIA/skills → clone 2026-09-18 (367 skills, hors scope) : seul data-designer extrait (voir DECISIONS.md)
+https://github.com/MengTo/ThreeUI → extraction 2026-09-18 : 43 prompts → library/01-frontend-design/threejs-3d-arsenal/
+https://github.com/agentskills/agentskills + https://github.com/VoltAgent/awesome-agent-skills + https://officialskills.sh/ → sources de découverte, pas d'extraction en bloc
 https://github.com/mattpocock/skills → vendor/external/mattpocock-skills
 https://github.com/anthropics/skills → vendor/external/anthropics-skills
 https://github.com/vercel-labs/agent-browser → vendor/external/vercel-agent-browser
